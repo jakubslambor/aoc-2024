@@ -1,0 +1,66 @@
+# Ignore build and publish directories
+bin/
+obj/
+out/
+
+# Ignore user-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.csproj.user
+*.vscode/
+
+# Ignore logs, databases, and backup files
+*.log
+*.dsn
+*.ldf
+*.mdf
+*.ndf
+*.sql
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.bak
+~$*
+*.swp
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore Rider and Resharper files
+.idea/
+*.sln.iml
+*.DotSettings
+_ReSharper*/
+*.dotCover
+*.dotTrace
+*.dotMemory
+*.dup
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ignore packages folder
+packages/
+
+# Ignore publish output
+.publish/
+artifacts/
+
+# Ignore dependency caches
+*.pidb
+*.stackdump
+*.nvuser
+*.cache/
+*.babelrc.cache
+
+# Ignore configuration files
+*.vsconfig
