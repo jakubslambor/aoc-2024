@@ -20,13 +20,19 @@ namespace Day1
                 secondParts.Add(int.Parse(parts[1]));
             }
 
-            firstParts.Sort();
-            secondParts.Sort();
-
             foreach (var (part, index) in firstParts.Select((value, i) => (value, i)))
             {
-                int secondPart = secondParts[index];
-                total += Math.Abs(part - secondPart);
+                int sum = 0;
+
+                for (int i = 0; i < secondParts.Count; i++)
+                {
+                    if (secondParts[i] == part)
+                    {
+                        sum++;
+                    }
+                }
+
+                total += sum * part;
             }
 
             Console.WriteLine(total);
