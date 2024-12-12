@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-
-class Program
+﻿class Program
 {
     static void Main(string[] args)
     {
@@ -28,10 +25,10 @@ class Program
         switch (day)
         {
             case 1:
-                Day1.Solution.Solve(input);
+                aoc_2024.Day1.Solution.Solve(input);
                 break;
             case 2:
-                // Day2.Solution.Solve(input);
+                aoc_2024.Day2.Solution.Solve(input);
                 break;
             // Add more cases for additional days
             default:

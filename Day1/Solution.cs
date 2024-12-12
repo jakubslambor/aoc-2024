@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-namespace Day1
+namespace aoc_2024.Day1
 {
     public class Solution
     {
@@ -9,8 +6,8 @@ namespace Day1
         {
             int total = 0;
 
-            List<int> firstParts = new List<int>();
-            List<int> secondParts = new List<int>();
+            List<int> firstParts = [];
+            List<int> secondParts = [];
 
             foreach (var line in input)
             {
