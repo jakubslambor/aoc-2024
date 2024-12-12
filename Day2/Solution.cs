@@ -26,6 +26,7 @@ namespace aoc_2024.Day2
         static bool IsValid(List<int> levels)
         {
             bool isIncreasing = levels[1] > levels[0];
+            bool skippedALevel = false;
 
             for (int i = 1; i < levels.Count; i++)
             {
@@ -34,13 +35,24 @@ namespace aoc_2024.Day2
                 // Any two adjacent levels differ by at least one and at most three.
                 if (Math.Abs(diff) > 3 || diff == 0)
                 {
-                    return false;
+                    if (skippedALevel)
+                    {
+                        return false;
+                    }
+
+                    skippedALevel = true;
+                    continue;
                 }
 
                 // The levels are either all increasing or all decreasing.
                 if ((isIncreasing && diff < 0) || (!isIncreasing && diff > 0))
                 {
-                    return false;
+                    if (skippedALevel)
+                    {
+                        return false;
+                    }
+
+                    skippedALevel = true;
                 }
             }
 
