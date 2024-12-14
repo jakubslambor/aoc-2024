@@ -30,6 +30,9 @@
             case 2:
                 aoc_2024.Day2.Solution.Solve(input);
                 break;
+            case 3:
+                aoc_2024.Day3.Solution.Solve(input);
+                break;
             // Add more cases for additional days
             default:
                 Console.WriteLine($"Solution for Day {day} is not implemented yet.");
